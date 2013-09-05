@@ -21,7 +21,7 @@
 		9A90CA5817D8CC2500E6BB62 /* Lenna.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A90CA5717D8CC2500E6BB62 /* Lenna.png */; };
 		9A90CA5B17D8CD9F00E6BB62 /* ImageConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A90CA5A17D8CD9F00E6BB62 /* ImageConverter.m */; };
 		9A90CA5D17D8E3B100E6BB62 /* lut_sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A90CA5C17D8E3B100E6BB62 /* lut_sample.json */; };
-		9A90CA6017D8E5D900E6BB62 /* filter.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A90CA5F17D8E5D900E6BB62 /* filter.c */; };
+		9A90CA6417D8ECC700E6BB62 /* filter.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A90CA6217D8ECC700E6BB62 /* filter.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,8 +45,8 @@
 		9A90CA5917D8CD9F00E6BB62 /* ImageConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageConverter.h; path = ImageProcessing/ImageConverter.h; sourceTree = "<group>"; };
 		9A90CA5A17D8CD9F00E6BB62 /* ImageConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageConverter.m; path = ImageProcessing/ImageConverter.m; sourceTree = "<group>"; };
 		9A90CA5C17D8E3B100E6BB62 /* lut_sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lut_sample.json; sourceTree = "<group>"; };
-		9A90CA5F17D8E5D900E6BB62 /* filter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = filter.c; sourceTree = "<group>"; };
-		9A90CA6117D8E5EA00E6BB62 /* filter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = filter.h; sourceTree = "<group>"; };
+		9A90CA6217D8ECC700E6BB62 /* filter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = filter.c; path = ImageProcessing/filter.c; sourceTree = "<group>"; };
+		9A90CA6317D8ECC700E6BB62 /* filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = filter.h; path = ImageProcessing/filter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,10 +123,10 @@
 		9A90CA5E17D8E5B700E6BB62 /* ImageProcessing */ = {
 			isa = PBXGroup;
 			children = (
+				9A90CA6217D8ECC700E6BB62 /* filter.c */,
+				9A90CA6317D8ECC700E6BB62 /* filter.h */,
 				9A90CA5917D8CD9F00E6BB62 /* ImageConverter.h */,
 				9A90CA5A17D8CD9F00E6BB62 /* ImageConverter.m */,
-				9A90CA5F17D8E5D900E6BB62 /* filter.c */,
-				9A90CA6117D8E5EA00E6BB62 /* filter.h */,
 			);
 			name = ImageProcessing;
 			sourceTree = "<group>";
@@ -203,7 +203,7 @@
 				9A90CA4517D8CA6E00E6BB62 /* AppDelegate.m in Sources */,
 				9A90CA4E17D8CA6E00E6BB62 /* ViewController.m in Sources */,
 				9A90CA5B17D8CD9F00E6BB62 /* ImageConverter.m in Sources */,
-				9A90CA6017D8E5D900E6BB62 /* filter.c in Sources */,
+				9A90CA6417D8ECC700E6BB62 /* filter.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +326,7 @@
 				9A90CA5617D8CA6E00E6BB62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

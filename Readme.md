@@ -17,4 +17,10 @@ loadLookUpTable(lut); // 色変換テーブルの読み出し
 lut_convert(src_buf, dst_buf, height, width, lut); // LUT変換
 ```
 
-(LUT変換の例)[sample1.png]
+![LUT変換の例](sample1.png)
+
+### TODO
+- テストできるようにする
+- トーンカーブ推定できるスクリプト作る
+- 枠を入れれるようにする
+- Androidと共通で使える仕組みは誰か作ってください
